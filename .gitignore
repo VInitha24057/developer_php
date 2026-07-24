@@ -1,0 +1,14 @@
+/vendor/
+/node_modules/
+
+.env
+
+Thumbs.db
+.DS_Store
+
+*.log
+
+.idea/
+.vscode/
+
+composer.phar

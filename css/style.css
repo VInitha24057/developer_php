@@ -1,0 +1,163 @@
+/* ==========================================
+   DeveloperInternship Custom Stylesheet
+   ========================================== */
+
+/* ------------------------------------------
+   1. Body
+   ------------------------------------------ */
+body {
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #212529;
+}
+
+
+/* ------------------------------------------
+   2. Card
+   ------------------------------------------ */
+.card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+/* ------------------------------------------
+   3. Headings
+   ------------------------------------------ */
+.card-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+    color: #1a1a2e;
+    letter-spacing: 0.3px;
+}
+
+.card-subtitle {
+    font-size: 1rem;
+    color: #6c757d;
+    margin-bottom: 1.5rem;
+}
+
+
+/* ------------------------------------------
+   4. Labels
+   ------------------------------------------ */
+.form-label {
+    font-weight: 600;
+    color: #495057;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+
+/* ------------------------------------------
+   5. Inputs
+   ------------------------------------------ */
+.form-control {
+    border-radius: 10px;
+    border: 1px solid #ced4da;
+    padding: 0.75rem 1rem;
+    font-size: 0.95rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+    outline: none;
+}
+
+
+/* ------------------------------------------
+   6. Buttons
+   ------------------------------------------ */
+.btn-primary {
+    border-radius: 10px;
+    padding: 0.75rem;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    background-color: #0d6efd;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0b5ed7;
+    transform: translateY(-1px);
+    box-shadow: 0 8px 20px rgba(13, 110, 253, 0.35);
+}
+
+.btn-primary:active {
+    transform: translateY(0);
+}
+
+
+/* ------------------------------------------
+   7. Login Link
+   ------------------------------------------ */
+a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #0d6efd;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0a58ca;
+    text-decoration: underline;
+}
+
+
+/* ------------------------------------------
+   8. Responsive Media Queries
+   ------------------------------------------ */
+
+/* Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    .card {
+        padding: 24px;
+    }
+
+    .card-title {
+        font-size: 1.6rem;
+    }
+}
+
+
+/* Mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+    .card {
+        padding: 18px;
+        border-radius: 12px;
+    }
+
+    .card-title {
+        font-size: 1.4rem;
+    }
+
+    .card-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .btn-primary {
+        font-size: 0.95rem;
+        padding: 0.65rem;
+    }
+}
+
+
+/* Large desktops (min-width: 1200px) */
+@media (min-width: 1200px) {
+    .col-lg-5 {
+        max-width: 500px;
+    }
+}
