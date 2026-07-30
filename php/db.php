@@ -38,6 +38,8 @@ try {
 
     http_response_code(500);
 
+    error_log("MYSQL ERROR: " . $e->getMessage());
+
     echo json_encode([
         'status' => 'error',
         'message' => $e->getMessage()
